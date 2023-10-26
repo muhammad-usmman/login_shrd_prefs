@@ -125,6 +125,7 @@ class _HomePageState extends State<HomePage> {
                         return Row(
                           children: [
                             InkWell(
+
                               onTap: () {},
                               borderRadius: BorderRadius.circular(12),
                               child: Padding(
@@ -146,7 +147,7 @@ class _HomePageState extends State<HomePage> {
                                             Container(
                                               padding: const EdgeInsets.all(10),
                                               width: 0.25.sw,
-                                              height: 0.25.sh,
+                                              height:  0.25.sh,
                                               decoration: BoxDecoration(
                                                 borderRadius:
                                                     BorderRadius.circular(8),
@@ -155,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                                                 imageUrl: Product.images[0]
                                                         .toString() ??
                                                     '',
-                                                fit: BoxFit.cover,
+                                                fit: BoxFit.fill,
                                                 placeholder: (context, url) =>
                                                     Container(
                                                       child: spinkit2,
@@ -198,10 +199,10 @@ class _HomePageState extends State<HomePage> {
                                                 Text(
                                                   Product.description
                                                       .toString(),
-                                                  softWrap: false,
-                                                  overflow:
-                                                      TextOverflow.ellipsis,
-                                                  maxLines: 3,
+                                                    softWrap: false,
+                                                    overflow:
+                                                        TextOverflow.ellipsis,
+                                                    maxLines: 3,
                                                   style: GoogleFonts.poppins(
                                                     color: Colors.grey,
                                                     fontSize: 10,

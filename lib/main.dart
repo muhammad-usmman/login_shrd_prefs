@@ -23,7 +23,7 @@ void main() async {
         debugShowCheckedModeBanner: false,
         title: 'Flutter demo',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
           useMaterial3: true,
         ),
         home: username == null ? const LoginPage() : const HomePage(),

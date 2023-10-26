@@ -13,8 +13,10 @@ class ProductsInitial extends ProductsState {
 
 class ProductsLoading extends ProductsState {
   @override
-  // TODO: implement props
-  List<Object?> get props => [];
+
+  List<Object?> get props => throw UnimplementedError();
+
+
 }
 
 class ProductsResponse extends ProductsState {
